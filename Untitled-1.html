@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gì cơ? Tin Chỉ là cái tên</title>
+    <link rel="stylesheet" href="./asset/css/Untitled-1.css">
+</head>
+<body>
+    <div class="center-text">
+        <span>Và đây là nhóm: Tập Tành tin</span>
+    </div>
+    <div class="container">
+        <div class="circle">
+            <img src="./asset/img/anh-chibi-cute-4.jpg" alt="Image 1" class="circle-img">
+            <img src="./asset/img/anh-ve-be-meo-be-gau-cute-don-gian.jpg" alt="Image 52" class="circle-img">
+            <img src="./asset/img/OIP (1).jpg" alt="Image 3" class="circle-img">
+            <img src="./asset/img/OIP (2).jpg" alt="Image 4" class="circle-img">
+            <img src="./asset/img/OIP (3).jpg" alt="Image 5" class="circle-img">
+            <img src="./asset/img/OIP (6).jpg" alt="Image 6" class="circle-img">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer--wrap" style="background-color: #FF6347;">
+                <span>  Thuyết trình: Trọng Hiếu</span>
+            </div>
+            <div class="footer--wrap" style="background-color: #4682B4;">
+                <span> Nội dung: Hùng</span>
+            </div>
+            <div class="footer--wrap" style="background-color: #32CD32;">
+                <span> Ppt : Thanh Vũ</span>
+            </div>
+            <div class="footer--wrap" style="background-color: #FFD700;">
+                <span> Minigame: Hải Đăng</span>
+            </div>
+        </div> 
+    </div>
+  <audio id="myAudio" preload="auto">
+        <source src="./asset/mp3/y2mate.com - Cánh Hoa Héo Tàn  Mochiii x Domino Remix  Có Lẽ Em Đã Không Còn Nước Mắt Giống Như 1 Vở Kịch Buồn-[AudioTrimmer.com].mp3" type="audio/mpeg">
+    </audio>
+  <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F5') {
+                event.preventDefault();
+                var audio = document.getElementById('myAudio');
+                audio.play(); 
+                audio.onended = function() {
+                    window.location.href = './asset/ppt/last.pptx'; 
+                };
+            }   
+        });
+    </script>
+</body>
+</html>
